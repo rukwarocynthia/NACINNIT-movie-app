@@ -1,0 +1,36 @@
+body {
+    background-image: url('https://i.pinimg.com/originals/78/38/d5/7838d5e1d3fab20dc0a6b4139bedbf00.gif');
+    background-size: cover; /* Cover the entire background */
+    background-position: centre; /* Center the background image */
+}
+
+.navbar {
+    background-color: #343a40 !important;
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #B197FC;
+}
+.card {
+    background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-film-stage-blue-glitter-movie-background-picture-image_1168564.jpg");
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.card-text {
+    color: white;
+}
+.btn {
+    border-radius: 5px;
+}
+#search-input {
+    border-radius: 5px;
+}
+#search-button, #download-button {
+    border-radius: 5px;
+}
