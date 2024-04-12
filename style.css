@@ -1,36 +1,171 @@
-body {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(#000000 50%, #ffb92a 50%);
     background-image: url('https://i.pinimg.com/originals/78/38/d5/7838d5e1d3fab20dc0a6b4139bedbf00.gif');
     background-size: cover; /* Cover the entire background */
     background-position: centre; /* Center the background image */
-}
-
-.navbar {
-    background-color: #343a40 !important;
-}
-.navbar-brand {
+  }
+  navbar-brand {
     font-size: 24px;
     font-weight: bold;
     color: #B197FC;
-}
-.card {
-    background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-film-stage-blue-glitter-movie-background-picture-image_1168564.jpg");
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.card-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-.card-text {
-    color: white;
-}
-.btn {
+  }
+  
+  .container {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 3em 1.8em;
+    background-color: #201f28;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+  }
+  .search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+  }
+  .search-container input,
+  .search-container button {
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+  }
+  .search-container input {
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    padding: 0.7em;
+    color: #ffffff;
+  }
+  .search-container input:focus {
+    border-color: #ffffff;
+  }
+  .search-container button {
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+  }
+  #result {
+    color: #ffffff;
+  }
+  .info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    margin-top: 1.2em;
+  }
+  .poster {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+  }
+  .rating img {
+    width: 1.2em;
+  }
+  .rating h4 {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  .details {
+    display: flex;
+    font-size: 0.95em;
+    gap: 1em;
+    justify-content: center;
+    color: #a0a0a0;
+    margin: 0.6em 0;
+    font-weight: 300;
+  }
+  .genre {
+    display: flex;
+    justify-content: space-around;
+  }
+  .genre div {
+    border: 1px solid #a0a0a0;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 0.4em;
+    font-weight: 300;
+  }
+  h3 {
+    font-weight: 500;
+    margin-top: 1.2em;
+  }
+  p {
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: justify;
+    color: #a0a0a0;
+  }
+  .msg {
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      font-size: 14px;
+    }
+    .info {
+      grid-template-columns: 1fr;
+    }
+    .poster {
+      margin: auto;
+      width: auto;
+      max-height: 10.8em;
+    }
+  }
+  /* Custom button styles */
+button {
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    font-size: 16px;
 }
-#search-input {
-    border-radius: 5px;
+
+button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
 }
-#search-button, #download-button {
-    border-radius: 5px;
+
+/* Additional styles for specific buttons */
+#search-btn {
+    background-color: #28a745; /* Green color */
+}
+
+#download-btn {
+    background-color: #dc3545; /* Red color */
+}
+
+#write-review-btn,
+#write-comment-btn {
+    background-color: #ffc107; /* Yellow color */
+}
+
+#add-to-watchlist-btn,
+#delete-from-watchlist-btn {
+    background-color: #17a2b8; /* Cyan color */
 }
