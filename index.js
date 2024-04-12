@@ -7,11 +7,8 @@ let watchlist = [];
 let getMovie = () => {
     let movieName = movieNameRef.value.trim(); // Trim whitespace from movie name
     let apiKey = "dad04ef6";
-    let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`;
-<<<<<<< HEAD
+    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`;
 
-=======
->>>>>>> f85c7c30c3810c051aabaf8ab1cb8818e5f0d438
 
     // If input field is empty
     if (movieName.length === 0) {
