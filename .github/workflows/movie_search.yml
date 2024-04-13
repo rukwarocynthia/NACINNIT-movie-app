@@ -1,1 +1,23 @@
 
+name: Movie Search
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+   runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run movie search script
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          node index.js
